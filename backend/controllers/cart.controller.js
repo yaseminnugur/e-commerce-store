@@ -2,11 +2,11 @@ import Product from "../models/product.model.js";
 
 export const getCartProducts = async (req, res) => {
     try {
-        const produts = await Product.find({ _id: { $in: req.user.cartItems}});
+        const products = await Product.find({ _id: { $in: req.user.cartItems}});
 
         const cartItems = products.map(product => {
             const item = req.user.cartItems.find(cartItem => cartItem.id === product.id);
-            return{...product.to.JSON(), quantity: item.quantity}
+            return{...product.toJSON(), quantity: item.quantity}
         })
 
         res.json(cartItems);
