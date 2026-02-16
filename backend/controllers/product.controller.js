@@ -1,4 +1,4 @@
-import { redis } from '../config/redis.config.js';
+import { redis } from '../lib/redis.js';
 import cloudinary from '../lib/cloudinary.js';
 import Product from '../models/product.model.js';
 
