@@ -10,7 +10,7 @@ function App() {
     <div className="min-h-screen bg-[#f5f5f7] text-gray-900 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,rgba(100,129,129,0.4)_0%,rgba(80,80,60,0.2)_45%,rgba(0,0,0,0.1)_100%)]" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-white" />
         </div>
       </div>
 

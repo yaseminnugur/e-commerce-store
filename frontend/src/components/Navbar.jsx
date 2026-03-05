@@ -7,12 +7,12 @@ const Navbar = () => {
   const isAdmin = false;
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-400 bg-opacity-90 backdrop-blur-md shadow-lg z-40 transition-all duration-300 border-b border-gray-300">
+    <header className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md shadow-lg z-40 transition-all duration-300 border-b border-gray-300">
       <div className="container mx-auto px-4 py-3">
         <div className="flex flex-wrap justify-between items-center">
           <Link
             to="/"
-            className="text-2xl font-bold text-white items-center space-x-2 flex"
+            className="text-2xl font-bold text-orange-500 items-center space-x-2 flex"
           >
             E-Commerce
           </Link>
@@ -20,23 +20,23 @@ const Navbar = () => {
           <nav className="flex flex-wrap items-center gap-4">
             <Link
               to={"/"}
-              className="text-gray-200 hover:text- transition duration-300 ease-in-out"
+              className="text-orange-500 hover:text-black transition duration-300 ease-in-out"
             >
               Home
             </Link>
             {user && (
               <Link
                 to={"/cart"}
-                className="relative group text-gray-200 hover:text-emerald-400 transition duration-300 ease-in-out"
+                className="relative group text-orange-500 hover:text-black transition duration-300 ease-in-out"
               >
                 <ShoppingCart
-                  className="inline-block mr-1 group-hover:text-emerald-400"
+                  className="inline-block mr-1 group-hover:text-black transition duration-300 ease-in-out"
                   size={20}
                 />
                 <span className="hidden sm:inline">Cart</span>
                 <span
-                  className="absolute -top-2 -left-2 bg-emerald-500 text-white rounded-full px-2 py-0.5 
-									text-xs group-hover:bg-emerald-400 transition duration-300 ease-in-out"
+                  className="absolute -top-2 -left-2 bg-orange-500 text-white rounded-full px-2 py-0.5 
+									text-xs group-hover:bg-black transition duration-300 ease-in-out"
                 >
                   {" "}
                   3
@@ -45,7 +45,7 @@ const Navbar = () => {
             )}
             {isAdmin && (
               <Link
-                className="bg-emerald-700 hover:bg-emerald-600 text-white px-3 py-1 rounded-md font-medium
+                className="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md font-medium
 								 transition duration-300 ease-in-out flex items-center"
               >
                 <Lock className="inline-block mr-1" size={18} />
@@ -64,7 +64,7 @@ const Navbar = () => {
               <>
                 <Link
                   to={"/signup"}
-                  className="bg-gray-600 hover:bg-gray-500 text-white py-2 px-4 
+                  className="bg-orange-700 hover:bg-orange-500 text-white py-2 px-4 
 									rounded-md flex items-center transition duration-300 ease-in-out"
                 >
                   <UserPlus className="mr-2" size={18} />
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to={"/login"}
-                  className="bg-gray-800 hover:bg-gray-600 text-white py-2 px-4 
+                  className="bg-orange-400 hover:bg-orange-600  text-white py-2 px-4 
 									rounded-md flex items-center transition duration-300 ease-in-out"
                 >
                   <LogIn className="mr-2" size={18} />
